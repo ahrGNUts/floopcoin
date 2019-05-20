@@ -25,6 +25,7 @@ while True:
     print('Make a selection: ')
     print('1. Add new transaction value')
     print('2. Output the blockchain blocks')
+    print('q. Quit')
     choice = get_user_choice()
 
     if choice == '1':
@@ -32,3 +33,9 @@ while True:
         add_value(tx_amt, get_last_blockchain_value())
     elif choice == '2':
         print_blockchain_elements()
+    elif choice == 'q':
+        break
+    else:
+        print('Invalid. Please make a selection from the list.')
+
+print('Done.')
