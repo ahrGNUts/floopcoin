@@ -22,6 +22,8 @@ def print_blockchain_elements():
     for block in blockchain:
         print('Outputting blocks:')
         print(block)
+    else:
+        print('-' * 20)
 
 def verify_chain():
     block_index = 0
